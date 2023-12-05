@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>My ToDo</title>
+  </head>
+
+  <body>
+    <div class="firstPageStyle">
+      <header>
+        <a href="index.html" >My ToDo</a>
+        <div class="TodoAndAbout">
+          <a href="index.html#toScrollDiv">Todo</a>
+          <a href="index.html#scrollFooter">About</a>
+        </div>
+      </header>
+      <div class="mainContent">
+        <h1 class="mainContentH1">What is a ToDo List?</h1>
+        <div class="mainContentText">
+          <p>
+            <span>-</span> Most typically, they’re organised in order of
+            priority.
+          </p>
+          <p>
+            <span>-</span> Traditionally, they’re written on a piece of paper or
+            post it notes and act as a memory aid
+          </p>
+          <p>
+            <span>-</span> As technology has evolved we have been able to create
+            a todo lists with excel spreadsheets, word documents, email lists,
+            todo list apps to name a few.
+          </p>
+          <p>
+            <span>-</span> Having a list of everything you need to do written
+            down in one place means you shouldn’t forget anything important.
+          </p>
+          <p>
+            <span>-</span> By prioritising the tasks in the list you plan the
+            order in which you’re going to do them and can quickly see what
+            needs your immediate attention and what tasks you can leave until a
+            little later.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- user Enters his Todo -->
+    <div class="ParentTodoDiv" id="toScrollDiv">
+      <h1 class="MyTodoText">My Todo !</h1>
+
+      <div class="TodoData">
+        <div class="userEntersTodo">
+          <form action="/" method="post">
+            <input type="text" name=""  id="usersTodoText" />
+            <input type="button" value="Add Todo" id="userTodoSubmitBtn" />
+          </form>
+        </div>
+
+        <div class="userTodoDisplay">
+          <h2>Your Latest Todo </h2>
+          <div class="userTodoDisplayTextAndBtn">
+            <p>walk the dog</p>
+            <button>Completed</button>
+          </div>
+          <div class="userTodoDisplayTextAndBtn">
+            <p>Plan for the Trip</p>
+            <button>Completed</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer id="scrollFooter">
+     <p>Project Made just to Brush up What is learned </p>
+     <a href="http://github.com">MY Github Profile</a>
+     <pre>@sushantBabar
+       @2021     </pre>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
