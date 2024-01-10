@@ -1,13 +1,13 @@
 const userTodoAdd = document.querySelector(".userTodoDisplay");
-const formEvent = document.querySelector("form");
+const formButton = document.querySelector("#userTodoSubmitBtn");
 
 
 
-formEvent.addEventListener("click", (e) => {
-
+formButton.addEventListener("click", (e) => {
+  e.preventDefault()
     console.dir(e.target.previousElementSibling)
     if (e.target.id == "userTodoSubmitBtn") {
-        if (e.target.previousElementSibling.value === "") {
+        if (e.target.previousElementSibling.value === "" ) {
             alert("Text box cannot be empty");
         } else {
             
